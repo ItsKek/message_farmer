@@ -12,7 +12,7 @@ client.on('ready', () => {
     config.commands.forEach(command => {
         const channel = client.channels.get(command.channelID);
         if(!channel || !command.active) return;
-        console.log("Параметры получены, запуск служб....")
+        console.log("Параметры получены с config.json, запуск автосообщений.")
         setInterval(() => {
             try {
                 if(command.inventory.say.count > 0 && command.inventory.say.active) {
