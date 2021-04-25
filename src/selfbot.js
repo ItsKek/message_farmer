@@ -4,7 +4,7 @@ const config = require('../config.json');
 const client = new Client();
 
 client.login(config.token);
-console.log("Успешный вход.. Получаю информацию из конфига")
+console.log("Попытка входа.. Получаю информацию из конфига")
 console.log("=============================================")
 console.log("Твой дискорд токен:", config.token)
 console.log("=============================================")
