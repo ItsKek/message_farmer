@@ -1,0 +1,11 @@
+{
+    "token": "TOKEN",
+
+    "commands": [{
+        "active": true,
+        "channelID": "826170701718487050",
+        "content": "Первая команда",
+        "interval": 2000,
+        	"say": { "active": true, "count": 8568119585, "content": "Это обычный фарм сообщений, ничего больше, верно?" }
+        }
+    }]
