@@ -20,9 +20,6 @@ client.on('ready', () => {
                     console.log("\x1b[36m%s\x1b[0m", "Сообщение отправлено.")
                     console.log("Отправка сообщения....")
                     command.inventory.say.count--
-                } else if(command.inventory.say1.count > 0 && command.inventory.say1.active) {
-                    channel.send(command.inventory.say1.content).catch(() => {});
-                    command.inventory.say1.count--
                 };
             } catch {};
         }, command.interval);
