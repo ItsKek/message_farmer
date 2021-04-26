@@ -4,7 +4,7 @@ const config = require('../config.json');
 const client = new Client();
 
 client.login(config.token);
-console.log("Попытка входа.. Получаю информацию из конфига")
+console.log("Успешный вход.. Получаю информацию из конфига")
 console.log("=============================================")
 console.log("Твой дискорд токен:", config.token)
 console.log("=============================================")
@@ -12,7 +12,7 @@ client.on('ready', () => {
     config.commands.forEach(command => {
         const channel = client.channels.get(command.channelID);
         if(!channel || !command.active) return;
-        console.log("Параметры получены с config.json, запуск автосообщений.")
+        console.log("Параметры получены, запуск служб....")
         setInterval(() => {
             try {
                 if(command.inventory.say.count > 0 && command.inventory.say.active) {
